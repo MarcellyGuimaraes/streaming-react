@@ -10,14 +10,14 @@ const Home = () => {
       <Link to="/series">
         <div className="card">
           <img src={series} alt="series card" />
-          <p>Séries Populares</p>
+          <span>Séries Populares</span>
         </div>
       </Link>
 
       <Link to="/filmes">
         <div className="card">
           <img src={filmes} alt="filmes card" />
-          <p>Filmes Populares</p>
+          <span>Filmes Populares</span>
         </div>
       </Link>
     </div>

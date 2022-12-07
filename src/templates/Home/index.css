@@ -1,11 +1,11 @@
 .container {
-    display: flex;
-    justify-content: space-around;
-    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin: 1rem 1rem 4rem 1rem;
 }
 
 .card {
-    padding: 2rem;
+    padding: 2rem 1rem 4rem 1rem;
     margin: 1rem;
     box-shadow: 1px 1px 15px black;
     width: 140px;
@@ -16,13 +16,10 @@
     box-shadow: 1px 1px 15px rgb(0, 22, 94);
 }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-}
 
 b,
 span {
+    font-size: 0.8rem;
     align-items: center;
     justify-content: center;
     width: 100%;

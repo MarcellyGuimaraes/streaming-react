@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="header">
       <Link to="/">
-        <h1 className="title">Filmes e Séries</h1>
+        <h1 className="title">DEMO Streaming</h1>
       </Link>
       <nav>
         <ul className="listNav">

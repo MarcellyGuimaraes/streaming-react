@@ -14,9 +14,11 @@ const Series = () => {
         <p>Loading</p>
       ) : (
         payload.map((serie) => (
-          <div key={serie.title}>
-            <Card text={serie.title} src={serie.images['Poster Art'].url} />
-          </div>
+          <Card
+            key={serie.title}
+            text={serie.title}
+            src={serie.images['Poster Art'].url}
+          />
         ))
       )}
     </div>
