@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    background: #00022E;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 2rem;
+    color: #fff;
+}
+
+.listNav{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item {
+    padding: 0 1rem;
+}
