@@ -26,7 +26,7 @@ const useFetch = (url, category) => {
         })
       }
     })
-  }, [])
+  }, [url, category])
 
   return states
 }
