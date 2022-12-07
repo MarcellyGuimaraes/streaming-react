@@ -7,6 +7,10 @@
     color: #fff;
 }
 
+.title {
+    color: #fff;
+}
+
 .listNav{
     display: flex;
     list-style: none;
