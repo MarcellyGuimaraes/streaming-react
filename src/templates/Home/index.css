@@ -31,3 +31,12 @@ img {
     height: 100%;
     background-color: #1e1e1e;
 }
+
+@media screen and (max-width: 480px){
+    .container {
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
