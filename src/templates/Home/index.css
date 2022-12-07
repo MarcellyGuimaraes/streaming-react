@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+.card{
+    padding: 2rem;
+    margin: 1rem;
+    box-shadow: 1px 1px 15px black;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 15px rgb(0, 22, 94);
+}
