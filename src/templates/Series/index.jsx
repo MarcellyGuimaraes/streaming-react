@@ -1,7 +1,6 @@
 import React from 'react'
 import useFetch from '../../api/useFetch'
 import Card from '../../components/Card'
-import './index.css'
 
 const baseUrl =
   'https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/feed/sample.json'
