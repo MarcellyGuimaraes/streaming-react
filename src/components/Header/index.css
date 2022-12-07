@@ -2,7 +2,7 @@
     display: flex;
     background: #00022E;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0.8rem 2rem;
     color: #fff;
 }
@@ -20,4 +20,15 @@
 
 .item {
     padding: 0 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .listNav{
+        padding: 0;
+    }
 }
