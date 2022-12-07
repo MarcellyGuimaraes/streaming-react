@@ -4,12 +4,33 @@
     margin: 1rem;
 }
 
-.card{
+.card {
     padding: 2rem;
     margin: 1rem;
     box-shadow: 1px 1px 15px black;
+    width: 140px;
+    height: 200px;
 }
 
 .card:hover {
     box-shadow: 1px 1px 15px rgb(0, 22, 94);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+b,
+span {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    background-color: #1e1e1e;
 }

@@ -10,9 +10,21 @@ const Header = () => {
       </Link>
       <nav>
         <ul className="listNav">
-          <li className="item">Filmes</li>
-          <li className="item">Séries</li>
-          <li className="item">Contato</li>
+          <li className="item">
+            <Link className="title" to="/filmes">
+              Filmes
+            </Link>
+          </li>
+          <li className="item">
+            <Link className="title" to="/series">
+              Séries
+            </Link>
+          </li>
+          <li className="item">
+            <Link className="title" to="#">
+              Contato
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
