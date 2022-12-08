@@ -21,9 +21,14 @@ const Header = () => {
             </Link>
           </li>
           <li className="item">
-            <Link className="title" to="#">
+            <a
+              target="_blank"
+              className="title"
+              href="https://www.linkedin.com/in/marcelly-souza-guimar%C3%A3es-728948246/"
+              rel="noreferrer"
+            >
               Contato
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>
