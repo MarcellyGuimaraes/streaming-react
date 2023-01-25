@@ -7,19 +7,22 @@ import { Link } from 'react-router-dom'
 const Home = () => {
   return (
     <div className="container">
-      <Link to="/series">
-        <div className="card">
-          <img src={series} alt="series card" />
-          <span>Séries Populares</span>
-        </div>
-      </Link>
+      <h2>Veja aqui as séries e filmes mais populares de hoje!</h2>
+      <div className="container_film">
+        <Link to="/series">
+          <div className="card">
+            <img src={series} alt="series card" />
+            <span>Séries Populares</span>
+          </div>
+        </Link>
 
-      <Link to="/filmes">
-        <div className="card">
-          <img src={filmes} alt="filmes card" />
-          <span>Filmes Populares</span>
-        </div>
-      </Link>
+        <Link to="/filmes">
+          <div className="card">
+            <img src={filmes} alt="filmes card" />
+            <span>Filmes Populares</span>
+          </div>
+        </Link>
+      </div>
     </div>
   )
 }
