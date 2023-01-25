@@ -11,7 +11,11 @@ const Series = () => {
         <p>Loading</p>
       ) : (
         payload.map((serie) => (
-          <Card key={serie.id} text={serie.name} src={serie.poster_path} />
+          <Card
+            key={serie.id}
+            text={serie.name}
+            src={`https://image.tmdb.org/t/p/w500${serie.poster_path}`}
+          />
         ))
       )}
     </div>

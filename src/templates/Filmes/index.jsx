@@ -11,7 +11,11 @@ const Filmes = () => {
         <p>Loading</p>
       ) : (
         payload.map((filme) => (
-          <Card key={filme.id} text={filme.title} src={filme.poster_path} />
+          <Card
+            key={filme.id}
+            text={filme.title}
+            src={`https://image.tmdb.org/t/p/w500${filme.poster_path}`}
+          />
         ))
       )}
     </div>
