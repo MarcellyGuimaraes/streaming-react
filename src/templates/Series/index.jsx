@@ -2,11 +2,8 @@ import React from 'react'
 import useFetch from '../../api/useFetch'
 import Card from '../../components/Card'
 
-const baseUrl =
-  'https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/feed/sample.json'
-
 const Series = () => {
-  const { payload, loading } = useFetch(baseUrl, 'series')
+  const { payload, loading } = useFetch('tv')
 
   return (
     <div className="container">
@@ -14,11 +11,7 @@ const Series = () => {
         <p>Loading</p>
       ) : (
         payload.map((serie) => (
-          <Card
-            key={serie.title}
-            text={serie.title}
-            src={serie.images['Poster Art'].url}
-          />
+          <Card key={serie.id} text={serie.name} src={serie.poster_path} />
         ))
       )}
     </div>

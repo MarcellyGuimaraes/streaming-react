@@ -1,7 +1,9 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 
-const useFetch = (url, category) => {
+const baseUrl = 'https://api.themoviedb.org/3/trending/'
+
+const useFetch = (category) => {
   const [states, setStates] = useState({
     payload: [],
     loading: false,
@@ -13,20 +15,14 @@ const useFetch = (url, category) => {
       loading: true,
     })
 
-    axios.get(url).then((data) => {
-      if (data.data && data.data.entries) {
-        setStates({
-          payload: data.data.entries
-            .filter(
-              ({ releaseYear, programType }) =>
-                releaseYear >= 2010 && programType === category,
-            )
-            .slice(0, 21),
-          loading: false,
-        })
-      }
-    })
-  }, [url, category])
+    axios
+      .get(
+        `${baseUrl}/${category}/day?api_key=25a54fb078f05780554c0c17f94855eb&language=pt-BR`,
+      )
+      .then((data) => {
+        setStates({ payload: data.data.results, loading: false })
+      })
+  }, [category])
 
   return states
 }
