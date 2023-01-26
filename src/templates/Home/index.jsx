@@ -10,7 +10,7 @@ const Home = () => {
       <h2 className="text-xl font-bold">
         Veja aqui as séries e filmes mais populares de hoje!
       </h2>
-      <div className="flex">
+      <div className="flex mt-8">
         <Link to="/series">
           <div className="m-4 pb-16 w-44 h-80">
             <img src={series} alt="series card" />
