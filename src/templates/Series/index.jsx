@@ -6,7 +6,7 @@ const Series = () => {
   const { payload, loading } = useFetch('tv')
 
   return (
-    <div className="container">
+    <div className="grid ">
       {loading ? (
         <p>Loading</p>
       ) : (
