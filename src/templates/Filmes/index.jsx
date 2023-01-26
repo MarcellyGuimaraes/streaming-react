@@ -6,7 +6,7 @@ const Filmes = () => {
   const { payload, loading } = useFetch('movie')
 
   return (
-    <div className="container">
+    <div className="flex flex-col items-center md:grid md:grid-cols-4 lg:grid-cols-7">
       {loading ? (
         <p>Loading</p>
       ) : (

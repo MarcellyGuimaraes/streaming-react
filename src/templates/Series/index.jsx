@@ -6,7 +6,7 @@ const Series = () => {
   const { payload, loading } = useFetch('tv')
 
   return (
-    <div className="grid ">
+    <div className="flex flex-col items-center md:grid md:grid-cols-4 lg:grid-cols-7">
       {loading ? (
         <p>Loading</p>
       ) : (
